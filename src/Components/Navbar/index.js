@@ -6,11 +6,11 @@ function Navbar() {
       <Nav>
         <h2>Maktab Sharif</h2>
         <Links>
-          <StyledLink to="/invoices">Home</StyledLink>
+          <StyledLink to="/">Home</StyledLink>
           <StyledLink to="/about">About Us</StyledLink>
-          <StyledLink to="/contact">Contact Us</StyledLink>
+          <StyledLink to="/contactus">Contact Us</StyledLink>
           <StyledLink to="/bootcamps">Bootcamps</StyledLink>
-          <StyledLink to="/contactform">Contact</StyledLink>
+          <StyledLink to="/contact">Contact</StyledLink>
         </Links>
         <Logo src="./logo.jpg" alt="logo" />
       </Nav>
