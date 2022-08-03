@@ -1,11 +1,14 @@
+import AnimatedTransitions from "../../Components/AnimatedTransitions";
 import Carousel from "../../Components/Carousel";
 
-function Home() {
+const Home = () => {
   return (
     <>
-      <Carousel />
+      <AnimatedTransitions>
+        <Carousel />
+      </AnimatedTransitions>
     </>
   );
-}
+};
 
 export default Home;

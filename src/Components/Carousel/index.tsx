@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Image, Wrapper } from "./styled";
 
-function Carousel() {
+const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
 
   useEffect(() => {
@@ -30,6 +30,6 @@ function Carousel() {
       <Image className="slide" src="./images/3.png" alt="testing" />
     </Wrapper>
   );
-}
+};
 
 export default Carousel;

@@ -1,6 +1,6 @@
 import { Nav, Links, Logo, StyledLink } from "./styled";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <>
       <Nav>
@@ -45,6 +45,6 @@ function Navbar() {
       </Nav>
     </>
   );
-}
+};
 
 export default Navbar;
