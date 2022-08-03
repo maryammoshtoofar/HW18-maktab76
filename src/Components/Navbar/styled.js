@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Nav = styled.nav`
   display: flex;
@@ -21,15 +21,21 @@ export const Logo = styled.img`
   height: 70px;
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(NavLink).attrs((props) => ({
+  className: props.className,
+}))`
+  &.active {
+    color: #f44c4e;
+    cursor: default;
+  }
+
+  &.inactive {
+    color: #747578;
+  }
   text-decoration: none;
-  color: #747578;
   font-weight: 600;
   font-size: 20px;
 
-  &&:visited {
-    color: #747578;
-  }
   &&:hover {
     color: #f44c4e;
   }
