@@ -9,6 +9,7 @@ const ContactUs = () => {
     phone: "",
     message: "",
   });
+
   const handleChange = (
     e:
       | React.ChangeEvent<HTMLInputElement>
@@ -18,6 +19,14 @@ const ContactUs = () => {
     setUserData({ ...userData, [name]: value });
   };
   const { name, familyName, email, phone, message } = userData;
+
+  const isValid =
+    name !== "" &&
+    familyName !== "" &&
+    email !== "" &&
+    phone !== "" &&
+    message !== "";
+
   return (
     <AnimatedTransitions>
       <form>
@@ -55,6 +64,9 @@ const ContactUs = () => {
           placeholder="پیغام خود را اینجا بنوبیسید"
           onChange={(e) => handleChange(e)}
         />
+        <button type="submit" disabled={!isValid}>
+          ارسال پیام
+        </button>
       </form>
     </AnimatedTransitions>
   );
