@@ -13,10 +13,22 @@ export const Para = styled.p`
   box-sizing: border-box;
   width: 40%;
   text-align: right;
-  background-color: rgba(228, 235, 244, 0.2);
+  color: #dbdada;
+  background: #43c6ac; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #191654,
+    #43c6ac
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #191654,
+    #43c6ac
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   border-radius: 10px;
   padding: 40px;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-  line-height: 25px;
-  font-size: 14px;
+  line-height: 40px;
+  font-size: 20px;
 `;

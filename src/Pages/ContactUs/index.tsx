@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AnimatedTransitions from "../../Components/AnimatedTransitions";
+import { Form, Input, Textarea } from "./styled";
 
 const ContactUs = () => {
   const [userData, setUserData] = useState({
@@ -29,36 +30,36 @@ const ContactUs = () => {
 
   return (
     <AnimatedTransitions>
-      <form>
-        <input
+      <Form>
+        <Input
           value={name}
           type="text"
           name="name"
           placeholder="نام"
           onChange={(e) => handleChange(e)}
         />
-        <input
+        <Input
           value={familyName}
           type="text"
           name="familyName"
           placeholder="نام خانوادگی"
           onChange={(e) => handleChange(e)}
         />
-        <input
+        <Input
           value={email}
           type="email"
           name="email"
           placeholder="ایمیل"
           onChange={(e) => handleChange(e)}
         />
-        <input
+        <Input
           value={phone}
           type="text"
           name="phone"
           placeholder="شماره تماس"
           onChange={(e) => handleChange(e)}
         />
-        <textarea
+        <Textarea
           value={message}
           name="message"
           placeholder="پیغام خود را اینجا بنوبیسید"
@@ -67,7 +68,7 @@ const ContactUs = () => {
         <button type="submit" disabled={!isValid}>
           ارسال پیام
         </button>
-      </form>
+      </Form>
     </AnimatedTransitions>
   );
 };
