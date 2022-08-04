@@ -1,9 +1,20 @@
 import AnimatedTransitions from "../../Components/AnimatedTransitions";
+import { courses } from "../../data";
+import { Link } from "react-router-dom";
 
 const BootCamps = () => {
   return (
     <AnimatedTransitions>
-      <div>BootCamps</div>
+      {courses.map((course) => (
+        <div key={course.id}>
+          <h1>{course.name}</h1>
+          <p>{course.description}</p>
+          <Link to={`/bootcamps${course.id}`} className="primaryButton">
+            Read More
+          </Link>
+          <button></button>
+        </div>
+      ))}
     </AnimatedTransitions>
   );
 };

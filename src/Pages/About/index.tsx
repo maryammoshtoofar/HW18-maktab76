@@ -5,7 +5,7 @@ const About = () => {
   return (
     <AnimatedTransitions>
       <Container>
-        <img src="./images/4.png" />
+        <img src="./images/4.png" alt="about-maktab" />
         <Para>
           مکتب آموزشگاه نیست. مکتب یه مدرسه برنامه‌نویسیه، یعنی جایی که در
           کمترین مدت مهارت‌های مورد نیاز بازار کار رو به صورت عملی یاد میده.

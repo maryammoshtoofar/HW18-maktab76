@@ -4,10 +4,6 @@ import { Image, Wrapper } from "./styled";
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
 
-  useEffect(() => {
-    showSlides();
-  }, [currentSlide]);
-
   const changeSlide = () => {
     if (currentSlide < 3) setCurrentSlide(currentSlide + 1);
     else if (currentSlide === 3) setCurrentSlide(1);
@@ -22,6 +18,9 @@ const Carousel = () => {
     }
     slides[currentSlide - 1].style.display = "block";
   };
+  useEffect(() => {
+    showSlides();
+  }, [currentSlide]);
 
   return (
     <Wrapper onClick={() => changeSlide()}>

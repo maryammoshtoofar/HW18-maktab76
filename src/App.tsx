@@ -8,8 +8,10 @@ import ContactUs from "./Pages/ContactUs";
 import BootCamps from "./Pages/BootCamps";
 import Contact from "./Pages/Contact";
 import { AnimatePresence } from "framer-motion";
+import BootCamp from "./Pages/BootCamp";
 
 const App = () => {
+  // let { userId } = useParams();
   const location = useLocation();
   return (
     <AnimatePresence exitBeforeEnter>
@@ -19,6 +21,7 @@ const App = () => {
           <Route path="about" element={<About />} />
           <Route path="contactus" element={<ContactUs />} />
           <Route path="bootcamps" element={<BootCamps />} />
+          <Route path=":id" element={<BootCamp />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
