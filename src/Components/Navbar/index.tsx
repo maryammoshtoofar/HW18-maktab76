@@ -41,7 +41,7 @@ const Navbar = () => {
             Contact
           </StyledLink>
         </Links>
-        <Logo src="./logo.jpg" alt="logo" />
+        <Logo src="logo.jpg" alt="logo" />
       </Nav>
     </>
   );

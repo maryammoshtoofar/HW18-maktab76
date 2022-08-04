@@ -1,4 +1,3 @@
-import "./App.css";
 import "./Components/Navbar";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Layout from "./Components/Layout";
@@ -11,7 +10,6 @@ import { AnimatePresence } from "framer-motion";
 import BootCamp from "./Pages/BootCamp";
 
 const App = () => {
-  // let { userId } = useParams();
   const location = useLocation();
   return (
     <AnimatePresence exitBeforeEnter>

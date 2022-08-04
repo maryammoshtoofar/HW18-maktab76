@@ -6,9 +6,18 @@ export const Form = styled.form`
   gap: 30px;
   width: 400px;
   margin: auto;
-  background: #43c6ac;
-  background: -webkit-linear-gradient(to bottom, #191654, #43c6ac);
-  background: linear-gradient(to bottom, #191654, #43c6ac);
+  background: #eecda3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ef629f,
+    #eecda3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ef629f,
+    #eecda3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   padding: 50px 100px;
   border-radius: 10px;
 `;
@@ -34,7 +43,8 @@ export const Textarea = styled.textarea`
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 `;
 const disabledStyles = css`
-  background-color: #a8a8a8;
+  background-color: #c4c4c4;
+  opacity: 0.3;
   cursor: not-allowed;
 `;
 const enabledStyles = css`
