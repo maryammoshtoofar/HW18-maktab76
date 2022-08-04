@@ -1,15 +1,16 @@
 import { useParams } from "react-router-dom";
-// import { courses } from "../../data";
+import { courses } from "../../data";
 
 const BootCamp = () => {
   const { id } = useParams();
-  console.log(id);
+  const course = courses.find((course) => course.id === Number(id))!;
 
   return (
-    <div>
-      {id}
-      {/* {courses.find((course) => course.id === bcId)} */}
-    </div>
+    <>
+      <div>{course.id}</div>
+      <div>{course.name}</div>
+      <div>{course.description}</div>
+    </>
   );
 };
 

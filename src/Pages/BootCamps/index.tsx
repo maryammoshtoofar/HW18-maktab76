@@ -9,7 +9,8 @@ const BootCamps = () => {
         <div key={course.id}>
           <h1>{course.name}</h1>
           <p>{course.description}</p>
-          <Link to={`/bootcamps${course.id}`} className="primaryButton">
+          <div>{course.id}</div>
+          <Link to={`${course.id}`} className="primaryButton">
             Read More
           </Link>
           <button></button>
